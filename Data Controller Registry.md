@@ -78,3 +78,7 @@
 ### Grading companies on privacy policies
 
 - Use some algorithm to give a grade
+
+### Comparison of companies
+
+- Compare similar companies or any type of company
