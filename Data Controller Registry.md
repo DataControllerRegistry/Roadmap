@@ -67,6 +67,12 @@
 - Think about making this
 - Revise ontologies
 - Will have to use LODRefine for this possibly
+- Open Data stuff to look at
+    + Open data at soton
+    + data.gov.uk
+    + bbc things
+    + FOAF
+
 
 ### Interactive app
 
