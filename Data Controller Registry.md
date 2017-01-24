@@ -7,6 +7,14 @@
 - CSV format
 - Huge horrible HTML block still exists
 - Possibly singular form of data
+- Using OpenRefine to clean data
+
+### Verdict
+
+- OpenRefine not quite successful for this yet, regex doesn't work well and no need for it either as such since we have a rigid-ish parser present already
+- Need to parse it and then run the parsed version through open refine since most of the important data is stuck in the HTML block
+- Will need to normalise the data classes, subjects etc.
+- Will need to find a way to extract this from the prose 
 
 ## Parser
 
@@ -72,6 +80,14 @@
     + data.gov.uk
     + bbc things
     + FOAF
+
+### Verdict
+
+- Semantic web is around, but not sure how to incorporate with current data
+- Personal knowledge is outdated
+- Google search uses schema.org
+- Recommended data structure is JSON-LD (JavaScript Object Notation for Linked Data)
+    + This is where I can look into
 
 
 ### Interactive app
