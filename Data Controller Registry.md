@@ -15,6 +15,55 @@
 - Need to parse it and then run the parsed version through open refine since most of the important data is stuck in the HTML block
 - Will need to normalise the data classes, subjects etc.
 - Will need to find a way to extract this from the prose 
+- **TODO**: Live chat or email about data quality
+
+### Observations
+
+- Format is a lot more strucutred now
+- But can still use a lot more improvement
+
+#### Data Controller Format
+
+As per data controller
+
+- Registration number
+- Organisation Name
+- Companies House Number *optional*
+- Address (up to 5 lines)
+- Postcode (optional)
+- Country (not complete, but can complete)
+- Freedom of information flag (being a public authority under FOI 2000)
+- Start date registration
+- End date registration
+- Exempt processing flag ( processes some data which it does not have to notify about)
+- Trading names (separated by `|`)
+- Representative
+    + Title (Mrs, Ms, Mr, Dr)
+    + First Name
+    + Last Name
+    + Address (up to five lines)
+    + Telephone
+    + Postcode
+    + Email
+    + Job Title
+    + *Notes*
+        * If the address may not be provided, we should just use 
+- Entry url (not needed since we can just add the registration number to the URL which we know : `https://ico.org.uk/ESDWebPages/Entry/` + registration)
+- Nature of work (multiple, separated by `/` or `,` possibly more - all types available at https://ico.org.uk/for-organisations/register/nature-of-work/ but can make their own too)
+- Reasons for processing information (mostly prose, sometimes list - will need filtering out as well as normalising)
+- classes of information processed (mostly list form, sometimes prose - will need filtering out as well as normalising) - *Data classes*
+- sensitive classes of information (mostly list form, sometimes prose - will need filtering out as well as normalising) *Sensitive data classes*
+- whom the information is processed about (mostly list, sometimes prose - will need filtering out as well as normalising) - *Data subjects*
+- whom the information may be shared with (mostly list, sometimes prose - will need filtering out as well as normalising) - *data recipients*
+- Other purposes for collecting information
+    + 5 types
+        * Providing financial services and advice
+        * Consulting and advisory services
+        * Undertaking research
+        * Consulation
+        * Trading and sharing personal information
+    + Each contains information about data classes, subjects and recepients, but generally in prose
+- Transfer policy (outside the EEA or not)
 
 ## Parser
 
