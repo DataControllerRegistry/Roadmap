@@ -22,8 +22,11 @@
     + Use of OpenRefine to refine data
     + Clean data and determine formats
 - Possibly build on existing java code? (most likely)
-- New parser in python?
+- New parser in python? C#?
 - Will have to change from XML handling to CSV handling
+
+### Verdict:
+- No need for a new parser
 
 
 ## Stats
